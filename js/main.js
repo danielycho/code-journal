@@ -18,7 +18,7 @@ function submitEntry(event) {
   entryData.notes = entryLog.elements.notes.value;
   entryData.nextEntryID = data.nextEntryID;
   data.nextEntryId++;
-  data.entries = entryData;
+  data.entries.push(entryData);
   photo.setAttribute('src', photoDefault);
   entryLog.reset();
 
