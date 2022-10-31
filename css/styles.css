@@ -8,8 +8,21 @@ input {
 
 textarea {
   width: 100%;
+  resize: none;
 }
 
 .fit {
-  object-fit: contain;
+  width: 100%;
+}
+
+.background-color {
+  background-color: #562b81;
+}
+
+.text-white {
+  color: white;
+}
+
+.flex-end {
+  justify-content: end;
 }

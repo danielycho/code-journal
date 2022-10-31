@@ -16,38 +16,32 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+  <header class="background-color">
     <div class="container">
       <div class="row">
-        <div class="column-full column-half">
-          <h2>Code Journal</h2>
+        <div class="column-full">
+          <h2 class="text-white">Code Journal</h2>
         </div>
       </div>
     </div>
   </header>
   <div class="container">
     <div class="row">
-      <div class="column-full column-half">
+      <div class="column-full">
         <h1>New Entry</h1>
       </div>
     </div>
     <div data-view="entry-form">
       <form>
         <div class="row">
-          <div class="column-full column-half">
+          <div class="column-half">
             <img class="fit" src="images/placeholder-image-square.jpg">
           </div>
-        </div>
-        <div class="row">
-          <div class="column-full column-half">
+          <div class="column-half">
             <label for="title">Title</label>
             <div>
               <input type="text" id="title" name="title" required>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column-full column-half">
             <label for="photo-url">Photo URL</label>
             <div>
               <input type="url" id="photo-url" name="photo-url" required>
@@ -55,7 +49,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="column-full column-half">
+          <div class="column-full">
             <label for="notes">Notes</label>
             <div>
               <textarea id="notes" rows="8" required></textarea>
@@ -63,14 +57,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="column-full">
+          <div class="column-full flex-end">
             <button>Save</button>
           </div>
         </div>
       </form>
     </div>
   </div>
-
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
