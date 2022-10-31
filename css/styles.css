@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.fit {
+  object-fit: contain;
+}

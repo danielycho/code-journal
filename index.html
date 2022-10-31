@@ -19,7 +19,7 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="column-half">
+        <div class="column-full column-half">
           <h2>Code Journal</h2>
         </div>
       </div>
@@ -27,15 +27,50 @@
   </header>
   <div class="container">
     <div class="row">
-      <div class="column-full">
+      <div class="column-full column-half">
         <h1>New Entry</h1>
       </div>
     </div>
-    <div data-view="entry-form"></div>
+    <div data-view="entry-form">
+      <form>
+        <div class="row">
+          <div class="column-full column-half">
+            <img class="fit" src="images/placeholder-image-square.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full column-half">
+            <label for="title">Title</label>
+            <div>
+              <input type="text" id="title" name="title" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full column-half">
+            <label for="photo-url">Photo URL</label>
+            <div>
+              <input type="url" id="photo-url" name="photo-url" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full column-half">
+            <label for="notes">Notes</label>
+            <div>
+              <textarea id="notes" rows="8" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full">
+            <button>Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 
-  <main>
-  </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
