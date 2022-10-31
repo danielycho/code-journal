@@ -12,7 +12,7 @@ textarea {
   resize: none;
 }
 
-.fit {
+.photo {
   width: 100%;
 }
 
@@ -46,4 +46,14 @@ textarea {
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
   border: none;
+}
+
+.font-edit {
+  font-weight: lighter;
+  letter-spacing: 0.05rem;
+}
+
+.font-entry {
+  font-weight: bold;
+  letter-spacing: 0.05rem;
 }
