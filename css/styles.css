@@ -66,3 +66,9 @@ ul {
 .padding-left {
   padding-left: 0;
 }
+
+.nav-style {
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
