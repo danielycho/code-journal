@@ -57,3 +57,12 @@ textarea {
   font-weight: bold;
   letter-spacing: 0.05rem;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.padding-left {
+  padding-left: 0;
+}
