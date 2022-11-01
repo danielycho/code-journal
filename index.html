@@ -15,11 +15,61 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header>
+<body class="light-grey-background">
+  <header class="background-color">
+    <div class="container">
+      <div class="row">
+        <div class="column-full">
+          <h2 class="text-white font-edit">Code Journal</h2>
+        </div>
+      </div>
+    </div>
   </header>
-  <main>
-  </main>
+  <div class="container">
+    <div class="row">
+      <div class="column-full">
+        <h1 class="font-entry">New Entry</h1>
+      </div>
+    </div>
+    <div data-view="entry-form">
+      <form id="entry">
+        <div class="row">
+          <div class="column-half">
+            <img class="photo" src="images/placeholder-image-square.jpg">
+          </div>
+          <div class="column-half">
+            <div class="add-margin">
+              <label class="title font-entry" for="title">Title</label>
+            </div>
+            <div class="add-space">
+              <input type="text" id="title" name="title" required>
+            </div>
+            <div class="add-margin">
+              <label class="font-entry" for="photourl">Photo URL</label>
+            </div>
+            <div class="add-space">
+              <input type="url" id="photourl" name="photourl" required>
+            </div>
+          </div>
+        </div>
+        <div class="row add-margin">
+          <div class="column-full">
+            <label class="font-entry" for="notes">Notes</label>
+            <div class="add-space">
+              <textarea name="notes" id="notes" rows="8" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full flex-end">
+            <div class="add-space">
+              <button class="button background-color">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
