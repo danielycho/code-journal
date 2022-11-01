@@ -28,10 +28,10 @@ entryLog.addEventListener('submit', submitEntry);
 
 /*
 <li>
-  <div class="container padding-left"> x
+  <div class="container"> x
     <div class="row"> x
       <div class="column-half"> x
-        <img class="photo object-position" src="images/placeholder-image-square.jpg"> x
+        <img class="photo" src="images/placeholder-image-square.jpg"> x
       </div>
       <div class="column-half">
         <div>
@@ -49,7 +49,7 @@ function renderJournalEntry(entry) {
   var li = document.createElement('li');
 
   var container = document.createElement('div');
-  container.setAttribute('class', 'container padding-left');
+  container.setAttribute('class', 'container');
   li.appendChild(container);
 
   var row = document.createElement('div');
@@ -93,3 +93,20 @@ function loadJournalEntry(event) {
 }
 
 window.addEventListener('DOMContentLoaded', loadJournalEntry);
+
+// If I click new-entry-button it should bring up journal-form
+// ul should be hidden
+// If I click nav-style it should bring up entries.
+// ul should be visible
+// journal form should be hidden
+
+// var entriesButton = document.querySelector('nav-button');
+var newEntryButton = document.querySelector('new-entry-button');
+var journalForm = document.querySelector('journal-form');
+
+function openForm(event) {
+  journalForm.className = 'container journal-form';
+  newEntryButton.className = 'new-button-entries hidden';
+}
+
+newEntryButton.addEventListener('click', openForm);

@@ -20,12 +20,12 @@
     <div class="container">
       <div class="row">
         <div class="column-full display-inline">
-          <h2 class="text-white font-edit">Code Journal <a class="text-white nav-style" href="?">Entries</a></h2>
+          <h2 class="text-white font-edit">Code Journal <button class="text-white nav-style">Entries</button></h2>
         </div>
       </div>
     </div>
   </header>
-  <div class="container">
+  <div class="container journal-form hidden">
     <div class="row">
       <div class="column-full">
         <h1 class="font-entry">New Entry</h1>
@@ -69,11 +69,18 @@
         </div>
       </form>
     </div>
-    <div class="row justify-start" data-view="entries">
-      <ul>
 
-      </ul>
+  </div>
+  <div>
+    <div data-view="entry-form" class="column-full row space-between padding">
+      <span class="entries">Entries</span>
+      <button class="new-entry-button">New</button>
     </div>
+    <div class="row justify-start" data-view="entries">
+    </div>
+    <ul>
+
+    </ul>
   </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

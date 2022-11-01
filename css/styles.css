@@ -63,12 +63,45 @@ ul {
   padding-left: 0;
 }
 
-.padding-left {
-  padding-left: 0;
-}
-
 .nav-style {
   padding-left: 2rem;
   text-decoration: none;
   font-size: 1.3rem;
+  background-color: #562b81;
+  border: none;
+}
+
+.align {
+  margin-left: 25rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.new-entry-button {
+  color: white;
+  background-color: #562b81;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.entries {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: visible;
+}
+
+.padding {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
