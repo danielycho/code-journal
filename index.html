@@ -20,12 +20,12 @@
     <div class="container">
       <div class="row">
         <div class="column-full display-inline">
-          <h2 class="text-white font-edit">Code Journal <button class="text-white nav-style">Entries</button></h2>
+          <h2 class="text-white font-edit">Code Journal <button id="entries" data-view="entries" class="text-white nav-style">Entries</button></h2>
         </div>
       </div>
     </div>
   </header>
-  <div class="container journal-form hidden">
+  <div class="container hidden">
     <div class="row">
       <div class="column-full">
         <h1 class="font-entry">New Entry</h1>
@@ -72,9 +72,9 @@
 
   </div>
   <div>
-    <div data-view="entry-form" class="column-full row space-between padding">
+    <div data-view="entries" class="column-full row space-between padding">
       <span class="entries">Entries</span>
-      <button class="new-entry-button">New</button>
+      <button data-view="entry-form" class="new-entry-button">New</button>
     </div>
     <div class="row justify-start" data-view="entries">
     </div>

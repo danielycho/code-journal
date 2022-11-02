@@ -101,12 +101,3 @@ window.addEventListener('DOMContentLoaded', loadJournalEntry);
 // journal form should be hidden
 
 // var entriesButton = document.querySelector('nav-button');
-var newEntryButton = document.querySelector('new-entry-button');
-var journalForm = document.querySelector('journal-form');
-
-function openForm(event) {
-  journalForm.className = 'container journal-form';
-  newEntryButton.className = 'new-button-entries hidden';
-}
-
-newEntryButton.addEventListener('click', openForm);
