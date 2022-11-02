@@ -78,9 +78,10 @@ ul {
 .new-entry-button {
   color: white;
   background-color: #562b81;
-  padding: 0.3rem 0.8rem;
+  padding: 0.3rem 1rem;
   border-radius: 0.4rem;
   text-decoration: none;
+  border: none;
 }
 
 .entries-style {

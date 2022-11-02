@@ -106,6 +106,7 @@ window.addEventListener('DOMContentLoaded', loadJournalEntry);
 var entries = document.querySelector('#entries');
 var newEntry = document.querySelector('.new-entry-button');
 var allView = document.querySelectorAll('.view');
+var saveButton = document.querySelector('#save-button');
 
 function viewSwitch(event) {
   for (var i = 0; i < allView.length; i++) {
@@ -117,5 +118,6 @@ function viewSwitch(event) {
   }
 }
 
+saveButton.addEventListener('click', viewSwitch);
 entries.addEventListener('click', viewSwitch);
 newEntry.addEventListener('click', viewSwitch);

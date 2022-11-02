@@ -63,21 +63,23 @@
         <div class="row">
           <div class="column-full flex-end">
             <div class="add-space">
-              <button class="button background-color">Save</button>
+              <button id="save-button" data-view="entries" class="button background-color">Save</button>
             </div>
           </div>
         </div>
       </form>
     </div>
   </div>
-  <div class="view row justify-start" data-view="entries">
-    <div id="entry-row" data-view="entries" class="column-full row view">
-      <span class="entries-style">Entries</span>
-      <button data-view="entry-form" class="new-entry-button">New</button>
-    </div>
-    <ul>
+  <div class="container">
+    <div class="view row" data-view="entries">
+      <div id="entry-row" data-view="entries" class="column-full view">
+        <span class="entries-style">Entries</span>
+        <button data-view="entry-form" class="new-entry-button">New</button>
+      </div>
+      <ul>
 
-    </ul>
+      </ul>
+    </div>
   </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
