@@ -71,10 +71,6 @@ ul {
   border: none;
 }
 
-.align {
-  margin-left: 25rem;
-}
-
 .new-entry-button {
   color: white;
   background-color: #562b81;
@@ -87,14 +83,6 @@ ul {
 .entries-style {
   font-size: 1.8rem;
   font-weight: bolder;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: visible;
 }
 
 .add-left-space {

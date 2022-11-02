@@ -31,7 +31,6 @@ entryLog.addEventListener('submit', submitEntry);
 
 /*
 <li>
-  <div class="container"> x
     <div class="row"> x
       <div class="column-half"> x
         <img class="photo" src="images/placeholder-image-square.jpg"> x
@@ -45,19 +44,14 @@ entryLog.addEventListener('submit', submitEntry);
         </p>
       </div>
     </div>
-  </div>
 </li> */
 
 function renderJournalEntry(entry) {
   var li = document.createElement('li');
 
-  var container = document.createElement('div');
-  container.setAttribute('class', 'container');
-  li.appendChild(container);
-
   var row = document.createElement('div');
   row.setAttribute('class', 'row');
-  container.appendChild(row);
+  li.appendChild(row);
 
   var colHalfOne = document.createElement('div');
   colHalfOne.setAttribute('class', 'column-half');
@@ -83,7 +77,7 @@ function renderJournalEntry(entry) {
   journalEntry.textContent = entry.notes;
   colHalfTwo.appendChild(journalEntry);
 
-  return container;
+  return row;
 }
 
 var ul = document.querySelector('ul');
