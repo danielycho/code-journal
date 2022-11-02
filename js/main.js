@@ -21,9 +21,12 @@ function submitEntry(event) {
   data.nextEntryId++;
   photo.setAttribute('src', photoDefault);
   entryLog.reset();
+  // mainForm.className('hidden');
 }
 
 entryLog.addEventListener('submit', submitEntry);
+
+// var mainForm = document.querySelector('#main-form');
 
 /*
 <li>
