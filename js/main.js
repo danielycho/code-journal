@@ -117,3 +117,15 @@ function viewSwitch(event) {
 saveButton.addEventListener('click', viewSwitch);
 entries.addEventListener('click', viewSwitch);
 newEntry.addEventListener('click', viewSwitch);
+
+// function handleEdit(event) {
+//   console.log('event.target is', event.target);
+//   console.log('event.target.tagName is', event.target.tagName);
+
+//   var closest = event.target.closest('ul');
+//   if (event.target.tagName === 'I') {
+//     console.log('closest parent is', closest);
+//   }
+// }
+
+// ul.addEventListener('click', handleEdit);
