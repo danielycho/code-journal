@@ -21,7 +21,6 @@ function submitEntry(event) {
   data.nextEntryId++;
   photo.setAttribute('src', photoDefault);
   entryLog.reset();
-
 }
 
 entryLog.addEventListener('submit', submitEntry);
@@ -100,18 +99,15 @@ window.addEventListener('DOMContentLoaded', loadJournalEntry);
 // ul should be visible
 // journal form should be hidden
 
-// var entriesButton = document.querySelector('nav-button');
-
-var allView = document.querySelectorAll('.view');
 var entries = document.querySelector('#entries');
-var newEntry = document.querySelector('.new');
+var newEntry = document.querySelector('.new-entry-button');
+var allView = document.querySelectorAll('.view');
 
 function viewSwitch(event) {
-  var dataView = event.target.getAttribute('data-view');
-  for (let i = 0; i < allView.length; i++) {
+  for (var i = 0; i < allView.length; i++) {
     if (allView[i].getAttribute('data-view') === event.target.getAttribute('data-view')) {
       allView[i].className = 'view';
-    } else if (allView[i].getAttribute(dataView) !== event.target.dataView) {
+    } else {
       allView[i].className = 'view hidden';
     }
   }

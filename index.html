@@ -25,13 +25,13 @@
       </div>
     </div>
   </header>
-  <div class="container view">
+  <div class=" container view hidden" data-view="entry-form">
     <div class="row">
       <div class="column-full">
-        <h1 class="font-entry">New Entry</h1>
+        <h1 class="font-entry add-left-space">New Entry</h1>
       </div>
     </div>
-    <div data-view="entry-form">
+    <div class="add-left-space">
       <form id="entry">
         <div class="row">
           <div class="column-half">
@@ -69,19 +69,17 @@
         </div>
       </form>
     </div>
-
   </div>
-  <div>
-    <div data-view="entries" class="column-full row space-between padding view hidden">
-      <span class="entries">Entries</span>
+  <div class="view row justify-start" data-view="entries">
+    <div id="entry-row" data-view="entries" class="column-full row view">
+      <span class="entries-style">Entries</span>
       <button data-view="entry-form" class="new-entry-button">New</button>
     </div>
-    <div class="row justify-start" data-view="entries">
-    </div>
-    <ul>
-
-    </ul>
   </div>
+  <ul>
+
+  </ul>
+
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

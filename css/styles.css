@@ -75,10 +75,6 @@ ul {
   margin-left: 25rem;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
 .new-entry-button {
   color: white;
   background-color: #562b81;
@@ -87,7 +83,7 @@ ul {
   text-decoration: none;
 }
 
-.entries {
+.entries-style {
   font-size: 1.8rem;
   font-weight: bolder;
 }
@@ -100,7 +96,15 @@ ul {
   display: visible;
 }
 
-.padding {
+.add-left-space {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#entry-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
