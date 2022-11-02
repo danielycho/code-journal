@@ -27,8 +27,6 @@ function submitEntry(event) {
 
 entryLog.addEventListener('submit', submitEntry);
 
-// var mainForm = document.querySelector('#main-form');
-
 /*
 <li>
     <div class="row"> x
@@ -67,11 +65,15 @@ function renderJournalEntry(entry) {
   row.appendChild(colHalfTwo);
 
   var div = document.createElement('div');
+  div.className = 'div-style';
   colHalfTwo.appendChild(div);
 
   var title = document.createElement('h2');
+  var edit = document.createElement('i');
+  edit.className = 'fa-regular fa-pen-to-square fa-2x';
   title.textContent = entry.title;
   div.appendChild(title);
+  div.appendChild(edit);
 
   var journalEntry = document.createElement('p');
   journalEntry.textContent = entry.notes;
