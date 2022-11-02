@@ -57,3 +57,44 @@ textarea {
   font-weight: bold;
   letter-spacing: 0.05rem;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-style {
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: #562b81;
+  border: none;
+}
+
+.new-entry-button {
+  color: white;
+  background-color: #562b81;
+  padding: 0.3rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  border: none;
+}
+
+.entries-style {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.add-left-space {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#entry-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

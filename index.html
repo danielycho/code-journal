@@ -19,19 +19,19 @@
   <header class="background-color">
     <div class="container">
       <div class="row">
-        <div class="column-full">
-          <h2 class="text-white font-edit">Code Journal</h2>
+        <div class="column-full display-inline">
+          <h2 class="text-white font-edit">Code Journal <button id="entries" data-view="entries" class="text-white nav-style">Entries</button></h2>
         </div>
       </div>
     </div>
   </header>
-  <div class="container">
+  <div id="main-form" class="container view hidden" data-view="entry-form">
     <div class="row">
       <div class="column-full">
-        <h1 class="font-entry">New Entry</h1>
+        <h1 class="font-entry add-left-space">New Entry</h1>
       </div>
     </div>
-    <div data-view="entry-form">
+    <div class="add-left-space">
       <form id="entry">
         <div class="row">
           <div class="column-half">
@@ -63,11 +63,22 @@
         <div class="row">
           <div class="column-full flex-end">
             <div class="add-space">
-              <button class="button background-color">Save</button>
+              <button id="save-button" data-view="entries" class="button background-color">Save</button>
             </div>
           </div>
         </div>
       </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="view row" data-view="entries">
+      <div id="entry-row" data-view="entries" class="column-full view">
+        <span class="entries-style">Entries</span>
+        <button data-view="entry-form" class="new-entry-button">New</button>
+      </div>
+      <ul>
+
+      </ul>
     </div>
   </div>
   <script src="js/data.js"></script>
