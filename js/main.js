@@ -21,7 +21,8 @@ function submitEntry(event) {
   data.nextEntryId++;
   photo.setAttribute('src', photoDefault);
   entryLog.reset();
-  // mainForm.className('hidden');
+  var newSubmit = renderJournalEntry(entryData);
+  ul.prepend(newSubmit);
 }
 
 entryLog.addEventListener('submit', submitEntry);
