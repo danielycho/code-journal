@@ -101,3 +101,21 @@ window.addEventListener('DOMContentLoaded', loadJournalEntry);
 // journal form should be hidden
 
 // var entriesButton = document.querySelector('nav-button');
+
+var allView = document.querySelectorAll('.view');
+var entries = document.querySelector('#entries');
+var newEntry = document.querySelector('.new');
+
+function viewSwitch(event) {
+  var dataView = event.target.getAttribute('data-view');
+  for (let i = 0; i < allView.length; i++) {
+    if (allView[i].getAttribute('data-view') === event.target.getAttribute('data-view')) {
+      allView[i].className = 'view';
+    } else if (allView[i].getAttribute(dataView) !== event.target.dataView) {
+      allView[i].className = 'view hidden';
+    }
+  }
+}
+
+entries.addEventListener('click', viewSwitch);
+newEntry.addEventListener('click', viewSwitch);
