@@ -118,14 +118,14 @@ saveButton.addEventListener('click', viewSwitch);
 entries.addEventListener('click', viewSwitch);
 newEntry.addEventListener('click', viewSwitch);
 
-// function handleEdit(event) {
-//   console.log('event.target is', event.target);
-//   console.log('event.target.tagName is', event.target.tagName);
+function handleEdit(event) {
+  if (event.tagName === 'I') {
+    for (let i = 0; i < data.entries.length; i++) {
+      if (data.entries[i].entryID.toString() === event.target.closest('li').getAttribute('data-entry-id')) {
+        data.editing = data.entries[i];
+      }
+    }
+  }
+}
 
-//   var closest = event.target.closest('ul');
-//   if (event.target.tagName === 'I') {
-//     console.log('closest parent is', closest);
-//   }
-// }
-
-// ul.addEventListener('click', handleEdit);
+ul.addEventListener('click', handleEdit);
